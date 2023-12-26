@@ -1,6 +1,8 @@
 let play = document.querySelector(".play");
 let audio = document.querySelector(".center");
 let next = document.querySelector(".next");
+let changeTextOfMusic = document.querySelector(".change");
+let changeTextOfMusicCreator = document.querySelector(".changes");
 play.addEventListener("click", function () {
   next.pause();
   audio.play();
@@ -8,6 +10,8 @@ play.addEventListener("click", function () {
 });
 let nextBtn = document.querySelector(".nextBtn");
 nextBtn.addEventListener("click", function () {
+  changeTextOfMusic.innerHTML = "Khamoshiyan";
+  changeTextOfMusicCreator.innerHTML = "Arijit Singh";
   audio.pause();
   next.play();
   console.log("play");
